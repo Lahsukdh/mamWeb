@@ -1,8 +1,101 @@
 * {
-    background-color: F0E7DA;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FCEAEA;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    text-align: center;
-    font-size: 80px;
+    color: #3E3737;
+    margin-top: 20px;
+    font-size: 100px;
+    font-family: 'Dancing Script';
+}
+
+.search-bar {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F79BA7;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #F79BA7;
+}
+
+.gallery {
+    background-color: #BB9681;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: calc(100% - 40px);
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    image-rendering: auto;
+}
+
+
+.bookmarks {
+    background-color: #3E3737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 40px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.bookmarks a {
+    display: inline-block;
+}
+
+.bookmarks img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;    
+    transition: transform 0.2s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bookmarks img:hover {
+    transform: scale(1.2);
 }

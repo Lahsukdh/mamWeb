@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <title>Welcome Page</title>
-    </head>
-    <body>
-        <h1>Welcome Mamu</h1>
-        <div class="gallery">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-        </div>
-    </body>
+</head>
+<body>
+    <div class="bookmarks" id="bookmarks">
+        <a href="https://www.amazon.com" title="Amazon">
+            <img src="icons/Amazon_icon.png" alt="Amazon">
+        </a>
+        <a href="https://www.youtube.com" title="YouTube">
+            <img src="icons/yt.png" alt="YouTube">  
+        </a>
+        <a href="https://mail.google.com" title="Gmail">
+            <img src="icons/gmail_icon.webp" alt="Gmail">
+        </a>
+        <a href="https://outlook.office365.com/" title="Outlook">
+            <img src="icons/outlook_icon.webp" alt="Outlook">
+        </a> 
+    </div>
+    <h1>Happy Birthday Mamu!</h1>
+    <form action="https://www.google.com/search" method="GET" class="search-bar">
+        <input type="text" name="q" placeholder="Search Google..." />
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="gallery" id="gallery"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
